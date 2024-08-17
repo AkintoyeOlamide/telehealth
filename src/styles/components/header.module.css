@@ -1,0 +1,139 @@
+.section {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 30px;
+    /* background-color: red; */
+    justify-content: space-between;
+}
+
+.logo {
+    width: 179px;
+    height: 42px;
+}
+
+.drawer_btn {
+    display: none;
+}
+
+.navs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    /* background-color: red; */
+}
+
+.nav_active {
+    color: #66BCFF;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav_inactive {
+    color: #000000AB;
+    font-size: 17px;
+    font-weight: 500;
+    opacity: 0.67;
+    cursor: pointer;
+}
+
+.auth_cta_cont {
+    height: 45px;
+    width: 200px;
+    background-color: #66BCFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+}
+
+.auth_cta_seperator {
+    width: 1px;
+    height: 60%;
+    background-color: white;
+}
+
+.auth_cta {
+    width: 48%;
+    height: 100%;
+    color: white;
+}
+
+@media screen and (max-width:450px) {
+    .section {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 0px 30px;
+        /* background-color: red; */
+        justify-content: space-between;
+    }
+    
+    .logo {
+        width: 100px;
+        height: 23px;
+    }
+
+    .drawer_btn {
+        display: flex;
+    }
+    
+    .navs {
+        display: none;
+    }
+
+    .nav_drawer {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+        background-color: white;
+        padding: 20px;
+    }
+    
+    .nav_active {
+        color: #66BCFF;
+        font-size: 17px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    
+    .nav_inactive {
+        color: #000000AB;
+        font-size: 17px;
+        font-weight: 500;
+        opacity: 0.67;
+        cursor: pointer;
+    }
+    
+    .auth_cta_cont {
+        height: 35px;
+        width: 180px;
+        background-color: #66BCFF;
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 4px;
+    }
+    
+    .auth_cta_seperator {
+        width: 1px;
+        height: 60%;
+        background-color: white;
+    }
+    
+    .auth_cta {
+        width: 48%;
+        height: 100%;
+        color: white;
+    }
+}

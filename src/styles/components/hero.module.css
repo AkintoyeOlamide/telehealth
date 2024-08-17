@@ -1,0 +1,103 @@
+.section {
+    width: 100%;
+    height: 700px;
+    /* background-color: green; */
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    background: url('../../../public/hero_bg1.png'), url('../../../public/hero_bg2.png');
+    background-size: 300px 300px, 650px 600px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0% 100%, 100% 50%;
+    padding-top: 70px;
+}
+
+.pane1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.intro {
+    font-size: 40px;
+    font-weight: 400;
+    color: #121212;
+    max-width: 550px;
+}
+
+.intro_variant {
+    font-size: 40px;
+    font-weight: 400;
+    color: #66BCFF;
+}
+
+.description {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    color: #696969;
+    max-width: 600px;
+}
+
+.cta {
+    height: 50px;
+    background-color: #66BCFF;
+    width: 200px;
+    color: white;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+@media screen and (max-width:450px) {
+    .section {
+        width: 100%;
+        height: 700px;
+        /* background-color: green; */
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        background: none, url('../../../public/hero_bg2.png');
+        background-size: 300px 300px, 350px 300px;
+        background-repeat: no-repeat, no-repeat;
+        background-position: 0% 100%, 150% 80%;
+        padding-top: 70px;
+    }
+    
+    .pane1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .intro {
+        font-size: 25px;
+        font-weight: 400;
+        color: #121212;
+        max-width: 300px;
+    }
+    
+    .intro_variant {
+        font-size: 25px;
+        font-weight: 400;
+        color: #66BCFF;
+    }
+    
+    .description {
+        font-size: 13px;
+        font-weight: 400;
+        margin-top: 20px;
+        color: #696969;
+        max-width: 300px;
+    }
+    
+    .cta {
+        height: 50px;
+        background-color: #66BCFF;
+        width: 200px;
+        color: white;
+        margin-top: 20px;
+        border-radius: 4px;
+    }
+}
